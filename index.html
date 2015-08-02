@@ -75,7 +75,7 @@ function initialize() {
   addMarker(candleLoc);
 
   var defMarker = new google.maps.Marker({
-    position: candleLoc,
+    position: teaLoc,
     map: map
   });
 
@@ -105,7 +105,7 @@ function setAllMap(map) {
 function clearMarkers() {
   setAllMap(null);
   markers[0].setMap(map);
-  markers[2].setMap(map);
+  markers[1].setMap(map);
 }
 
 // Shows any markers currently in the array.
