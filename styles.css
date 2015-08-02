@@ -258,4 +258,16 @@ JS bound to its name.
   padding: 20px;
   box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.12), 0px 2px 2px 0 rgba(0, 0, 0, 0.24); }
 
+.explore {
+  padding: 0 20px 20px 20px; }
+  .explore .explorecol {
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top; }
+    .explore .explorecol .tagpill, .explore .explorecol .tagpill2 {
+      vertical-align: top;
+      display: block; }
+    .explore .explorecol img {
+      margin: 20px; }
+
 /*# sourceMappingURL=styles.css.map */
