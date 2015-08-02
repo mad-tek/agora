@@ -31,8 +31,8 @@ function initialize() {
   addMarker(teaLoc,'img/tea.png');
   addMarker(candleLoc,'img/candle.png');
   addMarker(loc1,'img/1.png');
-  addMarker(loc2,'img/1.png');
-  addMarker(loc3,'img/1.png');
+  addMarker(loc2,'img/b2.png');
+  addMarker(loc3,'img/b3.png');
   addMarker(loc4,'img/1.png');
   addMarker(loc5,'img/1.png');
   addMarker(loc6,'img/1.png');
