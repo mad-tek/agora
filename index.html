@@ -25,42 +25,43 @@
     </div>
     <!-- end navigation -->
     <!-- ownProfile -->
-    <div class='ownProfile' style="display: none;">
+    <div class='ownProfile'>
       <div id="hero">
         <div id="heroOverlay"></div>
         <div class="businessHeader">
           <img src="img/ownProfilepic.png" alt="" width="119" height="115">
           <div class='hero-text'>
-            <h2>Sheesar's Cheese</h2>
-            <h3>San Francisco</h3>
+            <h2>Xcepsion Winery</h2>
+            <h3>Napa, CA</h3>
           </div>
           <!-- radial menu -->
           <div class='radial-container'>
-            <div class='radial-container'>
-              <nav class='radial'>
-                <div class='avatar'>
-                  <a class='entypo-menu' href='#' title='menu'></a>
-                </div>
-                <div class='menu'>
-                  <a class='entypo-star' href='#' title='star'>
-                    <span class='hide'>Star</span>
-                  </a>
-                  <a class='entypo-plus' href='#' title='add'>
-                    <span class='hide'>add</span>
-                  </a>
-                  <a class='entypo-comment' href='/compose' title='reply'>
-                    <span class='hide'>Reply</span>
-                  </a>
-                </div>
-              </nav>
-            </div>
+            <nav class='radial'>
+              <div class='avatar'>
+                <a class='entypo-menu' href='#' title='menu'></a>
+              </div>
+              <div class='menu'>
+                <a class='entypo-cancel' href='#' title='remove'>
+                  <span class='hide'>Remove</span>
+                </a>
+                <a class='entypo-star' href='#' title='star'>
+                  <span class='hide'>Star</span>
+                </a>
+                <a class='entypo-plus' href='#' title='add'>
+                  <span class='hide'>add</span>
+                </a>
+                <a class='entypo-comment' href='/compose' title='reply'>
+                  <span class='hide'>Reply</span>
+                </a>
+              </div>
+            </nav>
           </div>
           <!-- end radial menu -->
         </div>
       </div>
       <div class="proudPartners">
         <h3>Proud Partners</h3>
-        <img src="img/1.png" alt="">
+        <img src="img/curr.png" alt="">
         <img src="img/tea.png" alt="">
         <img src="img/b2.png" alt="">
       </div>
@@ -78,12 +79,12 @@
     </div>
     <!-- end Explore -->
     <!-- connect -->
-      <div id="panel" class="map">
+      <div id="panel" class="map" style="display: none;">
         <input onclick="clearMarkers();" type=button value="Show Suggested">
         <input onclick="showMarkers();" type=button value="Show All Businesses">
         <input type=button value="Back to Agora">
       </div>
-      <div id="map-canvas" class="map"></div>
+      <div id="map-canvas" class="map" style="display: none;"></div>
       <!-- end connect -->
   </body>
   <script src='navigation.js'></script>
