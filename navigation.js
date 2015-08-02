@@ -28,24 +28,24 @@ $(function(){
     });
 });
 
-var changePage = function(showPage, hidePage, hidePage2, hidePage3) {
+var changePage = function(showPage, hidePageArr) {
   $(showPage).attr( "style", "" );
-  $(hidePage).attr( "style", "display: none;");
-  $(hidePage2).attr( "style", "display: none;");
-  $(hidePage3).attr( "style", "display: none;");
+  for(var i = 0; i < hidePageArr.length; i++){
+    $(hidePageArr[i]).attr( "style", "display: none;");
+  };
 }
 
 function explore() {
   console.log("explore!!");
-  changePage('.explore', '.map', '.ownProfile');
+  changePage('.explore', ['.map', '.ownProfile']);
 }
 
 function connect() {
   console.log("connect");
-  changePage('.map', '.ownProfile', '.explore');
+  changePage('.map', ['.ownProfile', '.explore']);
 }
 
 function ownProfile() {
   console.log("ownProfile");
-  changePage('.ownProfile', '.explore', '.map');
+  changePage('.ownProfile', ['.explore', '.map']);
 }
