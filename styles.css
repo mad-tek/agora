@@ -249,4 +249,13 @@ JS bound to its name.
 .tagpill3 {
   background-color: #1352E2; }
 
+.bio strong, .bio .biobox {
+  vertical-align: top;
+  display: inline-block; }
+.bio .biobox {
+  margin: 0 10px;
+  width: 80%;
+  padding: 20px;
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.12), 0px 2px 2px 0 rgba(0, 0, 0, 0.24); }
+
 /*# sourceMappingURL=styles.css.map */
