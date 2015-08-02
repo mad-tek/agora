@@ -63,20 +63,22 @@ function initialize() {
   var mapOptions = {
     zoom: 18,
     center: currLoc ,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+    mapTypeId: google.maps.MapTypeId.ROADMAP,
+    mapTypeControl: false
   };
   map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
 
 
   // Adds a marker at the center of the map.
-  addMarker(currLoc);
-  addMarker(teaLoc);
-  addMarker(candleLoc);
+  addMarker(currLoc,'img/1.png');
+  addMarker(teaLoc,'img/tea.png');
+  addMarker(candleLoc,'img/candle.png');
 
   var defMarker = new google.maps.Marker({
-    position: teaLoc,
-    map: map
+    position: candleLoc,
+    map: map,
+    icon: 'img/candle.png'
   });
 
   google.maps.event.addListener(defMarker, 'click', function(){
@@ -86,10 +88,11 @@ function initialize() {
 }
 
 // Add a marker to the map and push to the array.
-function addMarker(location) {
+function addMarker(location, img) {
   var marker = new google.maps.Marker({
     position: location,
-    map: map
+    map: map,
+    icon: img
   });
   markers.push(marker);
 }
@@ -105,7 +108,7 @@ function setAllMap(map) {
 function clearMarkers() {
   setAllMap(null);
   markers[0].setMap(map);
-  markers[1].setMap(map);
+  markers[2].setMap(map);
 }
 
 // Shows any markers currently in the array.
