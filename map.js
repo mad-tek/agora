@@ -6,18 +6,16 @@ var markers = [];
 
 function initialize() {
   var currLoc = new google.maps.LatLng(37.761413, -122.388485);
-  var teaLoc = new google.maps.LatLng(37.762497, -122.390606);
-  var candleLoc = new google.maps.LatLng(37.759741, -122.386529);
-  var loc1 = new google.maps.LatLng(37.764462, -122.394240);
+  var loc1 = new google.maps.LatLng(37.762462, -122.390240);
   var loc2 = new google.maps.LatLng(37.761570, -122.394916);
   var loc3 = new google.maps.LatLng(37.756234, -122.393799);
   var loc4 = new google.maps.LatLng(37.767067, -122.389985);
   var loc5 = new google.maps.LatLng(37.770820, -122.417066);
-  var loc6 = new google.maps.LatLng(37.748046, -122.390245);
-  var loc7 = new google.maps.LatLng(37.757639, -122.383124);
+  var loc6 = new google.maps.LatLng(37.7638046, -122.387245);
+  var loc7 = new google.maps.LatLng(37.760639, -122.385124);
   var loc8 = new google.maps.LatLng(37.764674, -122.399642);
   var mapOptions = {
-    zoom: 18,
+    zoom: 16,
     center: currLoc ,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     mapTypeControl: false
@@ -27,17 +25,15 @@ function initialize() {
 
 
   // Adds a marker at the center of the map.
-  addMarker(currLoc,'img/1.png');
-  addMarker(teaLoc,'img/tea.png');
-  addMarker(candleLoc,'img/candle.png');
-  addMarker(loc1,'img/1.png');
-  addMarker(loc2,'img/b2.png');
-  addMarker(loc3,'img/b3.png');
-  addMarker(loc4,'img/1.png');
-  addMarker(loc5,'img/1.png');
-  addMarker(loc6,'img/1.png');
-  addMarker(loc7,'img/1.png');
-  addMarker(loc8,'img/1.png');
+  addMarker(currLoc,'img/wine.png');
+  addMarker(loc1,'img/candle.png');
+  addMarker(loc2,'img/business14.png');
+  addMarker(loc3,'img/tea.png');
+  addMarker(loc4,'img/business1.png');
+  addMarker(loc5,'img/business2.png');
+  addMarker(loc6,'img/business3.png');
+  addMarker(loc7,'img/business4.png');
+  addMarker(loc8,'img/business13.png');
 
 
   var defMarker = new google.maps.Marker({
@@ -73,7 +69,8 @@ function setAllMap(map) {
 function clearMarkers() {
   setAllMap(null);
   markers[0].setMap(map);
-  markers[2].setMap(map);
+  markers[1].setMap(map);
+  markers[6].setMap(map);
 }
 
 // Shows any markers currently in the array.
