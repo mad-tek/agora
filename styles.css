@@ -264,7 +264,7 @@ JS bound to its name.
     padding: 20px;
     display: inline-block;
     vertical-align: top; }
-    .explore .explorecol .tagpill, .explore .explorecol .tagpill2 {
+    .explore .explorecol .tagpill, .explore .explorecol .tagpill2, .explore .explorecol .tagpill3 {
       vertical-align: top;
       display: block; }
     .explore .explorecol img {
