@@ -15,11 +15,11 @@ $(function(){
                    ownProfile();
                    ;
                    break;
-                case 'creatifs':
-                   creatifs();
+                case 'cheeseProfile':
+                   cheeseProfile();
                    break;
-                case 'visuals':
-                   visuals();
+                case 'glassProfile':
+                   glassProfile();
                    break;
                 case 'blog':
                    blog();
@@ -37,15 +37,23 @@ var changePage = function(showPage, hidePageArr) {
 
 function explore() {
   console.log("explore!!");
-  changePage('.explore', ['.map', '.ownProfile']);
+  changePage('.explore', ['.map', '.ownProfile', '.cheeseProfile', '.glassProfile']);
 }
 
 function connect() {
   console.log("connect");
-  changePage('.map', ['.ownProfile', '.explore']);
+  changePage('.map', ['.ownProfile', '.explore', '.cheeseProfile', '.glassProfile']);
 }
 
 function ownProfile() {
   console.log("ownProfile");
-  changePage('.ownProfile', ['.explore', '.map']);
+  changePage('.ownProfile', ['.explore', '.map', '.cheeseProfile', '.glassProfile']);
+}
+
+function cheeseProfile() {
+  changePage('.cheeseProfile', ['.explore', '.map', '.ownProfile', '.glassProfile']);
+}
+
+function glassProfile() {
+  changePage('.glassProfile', ['.explore', '.map', '.ownProfile', '.cheeseProfile']);
 }
