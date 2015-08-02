@@ -2,12 +2,14 @@
 $red: #E85349;
 $green: #22C064;
 $blue: #1352E2;
+$bg: #333B42;
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
 }
 //globals
 html, body, #map-canvas {
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;

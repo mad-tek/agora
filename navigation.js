@@ -1,3 +1,14 @@
+function loadJS(file) {
+    // DOM: Create the script element
+    var jsElm = document.createElement("script");
+    // set the type attribute
+    jsElm.type = "application/javascript";
+    // make the script element load file
+    jsElm.src = file;
+    // finally insert the element to the body element in order to load the script
+    document.body.appendChild(jsElm);
+}
+
 $(function(){
     $('a').on('click',function(e){
         var href = this.href.split("=");
@@ -43,6 +54,7 @@ function explore() {
 function connect() {
   console.log("connect");
   changePage('.map', ['.ownProfile', '.explore', '.cheeseProfile', '.glassProfile']);
+
 }
 
 function ownProfile() {
@@ -55,5 +67,5 @@ function cheeseProfile() {
 }
 
 function glassProfile() {
-  changePage('.glassProfile', ['.explore', '.map', '.ownProfile', '.cheeseProfile']);
+  changePage('.glassProfile', ['.explore', '.map', '.ownProfile', '.cheeseProfile', '.coverPage']);
 }
