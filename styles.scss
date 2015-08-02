@@ -2,15 +2,12 @@ html, body, #map-canvas {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans','sans-serif';
+  font-family: 'Roboto','sans-serif';
 }
 ul
 {
     list-style-type: none;
     padding-left: 0;
-}
-.mapinv{
-  display: block;
 }
 
 /*
@@ -48,7 +45,7 @@ JS bound to its name.
 }
 // navigation
 #nav {
-  position: absolute;
+  position: fixed;
   right: 0;
   top:0;
   height: 200px;
@@ -77,5 +74,42 @@ JS bound to its name.
     &:active, &:hover, &:focus {
       border-left: none;
     }
+  }
+}
+#hero {
+  width: 100%;
+  height: 300px;
+  background: url(img/hero-cheese.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  #heroOverlay {
+    margin-top: -100px;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    filter: opacity(0.5);
+  }
+  .businessHeader{
+    filter: opacity(1);
+    color: white;
+    text-align: center;
+    img {
+      margin-top: -20px;
+      position: absolute;
+      float: left;
+      left: 30%;
+    }
+  }
+}
+.hero-text{
+  h2{
+    margin: 20px 0 0 0;
+  }
+  h3{
+    margin: 0 0 0 -70px;
   }
 }
