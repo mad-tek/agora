@@ -233,4 +233,20 @@ JS bound to its name.
   .status small {
     color: gray; }
 
+.tagpill, .tagpill2, .tagpill3 {
+  color: white;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0 3px; }
+
+.tagpill {
+  background-color: #E85349; }
+
+.tagpill2 {
+  background-color: #22C064; }
+
+.tagpill3 {
+  background-color: #1352E2; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,7 @@
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 $red: #E85349;
 $green: #22C064;
+$blue: #1352E2;
 /* entypo */
 [class*="entypo-"]:before {
   font-family: 'entypo', sans-serif;
@@ -277,4 +278,20 @@ JS bound to its name.
   small {
     color: gray;
   }
+}
+.tagpill, .tagpill2, .tagpill3 {
+  color: white;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0 3px;
+}
+.tagpill {
+  background-color: $red;
+}
+.tagpill2 {
+  background-color: $green;
+}
+.tagpill3{
+  background-color: $blue;
 }
