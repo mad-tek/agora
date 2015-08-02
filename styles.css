@@ -2,22 +2,14 @@ html, body, #map-canvas {
   height: 100%;
   margin: 0;
   padding: 0;
-}
+  font-family: 'Open Sans','sans-serif'; }
 
-.mapinv{
-  display: block;
-}
+ul {
+  list-style-type: none;
+  padding-left: 0; }
 
-#panel {
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  margin-left: -180px;
-  z-index: 5;
-  background-color: #fff;
-  padding: 5px;
-  border: 1px solid #999;
-}
+.mapinv {
+  display: block; }
 
 /*
 Provide the following styles for both ID and class,
@@ -26,21 +18,54 @@ JS bound to its name, and the class is just non-map
 content that may already have a different ID with
 JS bound to its name.
 */
-
 #panel, .panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
   font-family: 'Roboto','sans-serif';
   line-height: 30px;
-  padding-left: 10px;
-}
+  padding-left: 10px; }
+  #panel select, #panel input, #panel .panel select, #panel .panel input, .panel select, .panel input, .panel .panel select, .panel .panel input {
+    font-size: 15px; }
+  #panel select, #panel .panel select, .panel select, .panel .panel select {
+    width: 100%; }
+  #panel i, #panel .panel i, .panel i, .panel .panel i {
+    font-size: 12px; }
 
-#panel select, #panel input, .panel select, .panel input {
-  font-size: 15px;
-}
+.hidden {
+  display: none; }
 
-#panel select, .panel select {
-  width: 100%;
-}
+#nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 200px;
+  width: 150px;
+  z-index: 9999;
+  background-color: #333333;
+  color: white;
+  box-shadow: 6px 8px 15px 0 rgba(0, 0, 0, 0.5), 6px 9px 15px 0 rgba(0, 0, 0, 0.8);
+  text-align: center; }
+  #nav a {
+    color: gray;
+    text-decoration: none;
+    padding: 0 43px; }
+    #nav a:active, #nav a:hover, #nav a:focus {
+      color: #FFF;
+      font-weight: bold;
+      border-left: thick solid #1C57FF;
+      transition: all 0.2s linear 0s; }
 
-#panel i, .panel i {
-  font-size: 12px;
-}
+#profpic {
+  padding: 20px 20px 0 20px; }
+  #profpic a {
+    padding: 0; }
+    #profpic a:active, #profpic a:hover, #profpic a:focus {
+      border-left: none; }
+
+/*# sourceMappingURL=styles.css.map */
