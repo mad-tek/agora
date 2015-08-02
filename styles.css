@@ -101,7 +101,16 @@ JS bound to its name.
     height: 350px;
     width: 100%;
     background-color: black;
-    filter: opacity(0.5); }
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+    /* Netscape */
+    -moz-opacity: 0.5;
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+    /* Good browsers */
+    opacity: 0.5; }
   #hero .businessHeader {
     filter: opacity(1);
     color: white;
@@ -176,5 +185,10 @@ JS bound to its name.
     max-height: 100%;
     padding: 0;
     margin: -4px -24px; }
+
+.proudPartners {
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.12), 0px 2px 2px 0 rgba(0, 0, 0, 0.24); }
 
 /*# sourceMappingURL=styles.css.map */
